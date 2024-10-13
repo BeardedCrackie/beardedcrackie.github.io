@@ -1,0 +1,49 @@
+baseURL = 'https://beardedcrackie.github.io/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'nightfall'
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Home (Sk)"
+  url = "/sk/"
+  weight = 2
+
+# Languages section
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 2
+
+  [languages.sk]
+    contentDir = 'content/sk'
+    disabled = false
+    languageName = "Slovak"
+    weight = 1
+
+# Enable multilingual support
+defaultContentLanguage = "sk"
+
+[params]
+user = "hello"
+hostname = "beardedcrackie"
+  [params.author]
+    name = "Bearded Crackie"
+
+
+readingTime = true  # Show reading time on post page
+published = true  # Show published data on post page
+
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/beardedcrackie"
+#icon = "fa-brands fa-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
+target = "_blank" # Defines your target option in a-href. _blank for a new Tab for example.
+aria = "GitHub Profile" # Define the aria label for accessibility like page reader - this is better for your SEO
+
