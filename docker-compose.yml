@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  hugo:
+    # Build the Docker image using the Dockerfile in the current directory.
+    build: .
+
+    # Map port 1313 on your host machine to port 1313 in the container,
+    # so you can access the site at http://localhost:1313.
+    ports:
+      - "1313:1313"
+
+    # Mount the current project directory into the container's /src directory.
+    # This is the key for live-reloading: file changes on your machine
+    # are instantly available inside the container for Hugo to rebuild.
+    volumes:
+      - .:/src
+
+    # The command to run the development server.
+    # -D : Renders content marked as draft.
+    # -w : Watches for file changes and enables live-reload.
+    # --bind 0.0.0.0 : Binds to all network interfaces to be accessible from the host.
+    # --baseURL http://localhost:1313 : Overrides the production baseURL from hugo.toml.
+    command: server --disableFastRender -D -w --bind 0.0.0.0 --baseURL http://localhost:1313
