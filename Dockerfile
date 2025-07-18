@@ -26,7 +26,7 @@ RUN apk add --no-cache curl tar \
 USER hugo
 
 # Command to run the Hugo server with live reload
-CMD ["server", "-D", "-w", "--bind=0.0.0.0"]
+CMD ["server", "-D", "-w", "--bind=0.0.0.0", "--disableFastRender"]
 
 # Expose the default Hugo port (1313)
 EXPOSE 1313
