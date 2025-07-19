@@ -36,7 +36,7 @@ jobs:
 
       - name: Run Hugo build in container
         run: |
-          docker run --rm -v ${{ github.workspace }}:/src hugo-site --minify
+          docker run --rm -v ${{ github.workspace }}:/src --user root hugo-site --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
