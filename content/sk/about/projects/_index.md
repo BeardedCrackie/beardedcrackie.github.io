@@ -1,9 +1,8 @@
 ---
 title: "Projekty"
-draft: false
-showMetadata: false
 weight: 5
 showDate: false
+showMetadata: false
 ---
 
 Na tejto stránke uvádzam výber mojich projektov a skúseností, ktoré odzrkadľujú môj profesionálny rast v oblasti DevOps, systémovej administrácie a experimentovania s technológiami vo voľnom čase.
