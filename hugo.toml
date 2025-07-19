@@ -24,14 +24,13 @@ defaultContentLanguage = "sk"
         weight = 2
 
 [params]
-user = "hello"
-hostname = "beardedcrackie"
-  [params.author]
-    name = "Bearded Crackie"
-readingTime = false  # Show reading time on post page
-published = false  # Show published data on post pages
-showMetadata = false
+  user = "hello"
+  hostname = "beardedcrackie"
+  readingTime = false  # Show reading time on post page
+  published = false  # Show published data on post pages
 
+[params.author]
+  name = "Bearded Crackie"
 
 
 [[params.social]]

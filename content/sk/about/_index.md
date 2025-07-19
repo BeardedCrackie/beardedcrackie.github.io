@@ -1,7 +1,6 @@
 ---
 title: "O mne"
 draft: false
-showMetadata: false
 showDate: false
 ---
 
